@@ -41,8 +41,8 @@ const PostView = (props: PostWithUser) => {
       <Image
         src={author.profileImageUrl}
         alt="user-profile-pic"
-        width={48}
-        height={48}
+        width={56}
+        height={56}
         className="rounded-full"
       />
       <div className="flex flex-col">
@@ -51,7 +51,7 @@ const PostView = (props: PostWithUser) => {
           <p className="font-bold">·</p>
           <span className="pl-1">{dayjs(post.createdAt).fromNow()}</span>
         </div>
-        <span>{post.content}</span>
+        <span className="text-2xl">{post.content}</span>
       </div>
     </div>
   );
